@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    card_view:cardBackgroundColor="#769dff"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="6dp"
+    card_view:contentPadding="5dp"
+    android:background="?selectableItemBackground"
+    android:clickable="true" >
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="0dp"
+        android:contextClickable="true"
+        android:clickable="true"
+        android:id="@+id/kcard">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/item_image"
+            android:transitionName="profile"
+            android:layout_alignParentLeft="true"
+            android:scaleType="fitXY"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" /> //Item Image
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_title"
+            android:textSize="30sp"
+            android:fontFamily="serif"
+            android:elevation="7dp"
+            android:textColor="#ffffff"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_alignBottom="@+id/item_image"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="19dp" />  //Item Title
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/item_detail"
+            android:layout_alignParentTop="false"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/item_image"
+            android:fontFamily="serif"
+            />  //Item Detail
+
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
